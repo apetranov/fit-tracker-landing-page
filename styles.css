@@ -1,5 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10%;
+}
+
+.hero img {
+  max-width: 30%;
+  border-radius: 20px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.heroText button {
+  background-color: rgb(1, 208, 255);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 800;
+}
+
+.heroText button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10%;
+    flex-direction: column;
+    padding: 5%;
+  }
+  .hero img {
+    max-width: 70%;
+    border-radius: 20px;
+  }
 }
