@@ -64,6 +64,33 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5%;
+  color: rgb(0, 183, 255);
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.feature {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.iconText {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  color: rgb(0, 170, 255);
+  font-size: 25px;
 }
 
 nav {
@@ -122,5 +149,23 @@ nav li:hover {
 
   nav {
     display: none;
+  }
+
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .iconText {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    color: rgb(0, 170, 255);
+    font-size: 15px;
   }
 }
