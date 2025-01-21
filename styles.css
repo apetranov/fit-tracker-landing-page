@@ -27,6 +27,7 @@ body {
 .hero img {
   max-width: 30%;
   border-radius: 20px;
+  animation: slideInFromBottom 1s forwards;
 }
 
 .heroText {
@@ -37,6 +38,7 @@ body {
   gap: 20px;
   text-align: center;
   color: white;
+  animation: slideInFromBottom 2s forwards;
 }
 
 .heroText button {
@@ -79,6 +81,27 @@ nav {
 nav li:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
