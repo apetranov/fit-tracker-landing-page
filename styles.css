@@ -20,6 +20,8 @@ body {
   align-items: center;
   height: 100vh;
   gap: 10%;
+  background-color: black;
+  width: 100%;
 }
 
 .hero img {
@@ -34,6 +36,7 @@ body {
   align-items: center;
   gap: 20px;
   text-align: center;
+  color: white;
 }
 
 .heroText button {
@@ -61,6 +64,23 @@ body {
   padding: 5%;
 }
 
+nav {
+  color: white;
+  background-color: black;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+nav li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .hero {
     display: flex;
@@ -75,5 +95,9 @@ body {
   .hero img {
     max-width: 70%;
     border-radius: 20px;
+  }
+
+  nav {
+    display: none;
   }
 }
